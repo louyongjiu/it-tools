@@ -62,6 +62,9 @@ dependencies:
   composerize-ts:
     specifier: ^0.6.2
     version: 0.6.2
+  countries-and-timezones:
+    specifier: ^3.6.0
+    version: 3.6.0
   country-code-lookup:
     specifier: ^0.1.0
     version: 0.1.0
@@ -89,6 +92,9 @@ dependencies:
   emojilib:
     specifier: ^3.0.10
     version: 3.0.10
+  event-cron-parser:
+    specifier: ^1.0.34
+    version: 1.0.34
   figlet:
     specifier: ^1.7.0
     version: 1.7.0
@@ -98,6 +104,9 @@ dependencies:
   fuse.js:
     specifier: ^6.6.2
     version: 6.6.2
+  get-timezone-offset:
+    specifier: ^1.0.5
+    version: 1.0.5
   highlight.js:
     specifier: ^11.7.0
     version: 11.7.0
@@ -3415,7 +3424,7 @@ packages:
     dependencies:
       '@unhead/dom': 0.5.1
       '@unhead/schema': 0.5.1
-      '@vueuse/shared': 11.0.3(vue@3.3.4)
+      '@vueuse/shared': 11.1.0(vue@3.3.4)
       unhead: 0.5.1
       vue: 3.3.4
     transitivePeerDependencies:
@@ -4057,8 +4066,8 @@ packages:
       - vue
     dev: false
 
-  /@vueuse/shared@11.0.3(vue@3.3.4):
-    resolution: {integrity: sha512-0rY2m6HS5t27n/Vp5cTDsKTlNnimCqsbh/fmT2LgE+aaU42EMfXo8+bNX91W9I7DDmxfuACXMmrd7d79JxkqWA==}
+  /@vueuse/shared@11.1.0(vue@3.3.4):
+    resolution: {integrity: sha512-YUtIpY122q7osj+zsNMFAfMTubGz0sn5QzE5gPzAIiCmtt2ha3uQUY1+JPyL4gRCTsLPX82Y9brNbo/aqlA91w==}
     dependencies:
       vue-demi: 0.14.10(vue@3.3.4)
     transitivePeerDependencies:
@@ -4676,6 +4685,11 @@ packages:
     dependencies:
       browserslist: 4.22.1
     dev: true
+
+  /countries-and-timezones@3.6.0:
+    resolution: {integrity: sha512-8/nHBCs1eKeQ1jnsZVGdqrLYxS8nPcfJn8PnmxdJXWRLZdXsGFR8gnVhRjatGDBjqmPm7H+FtYpBYTPWd0Eiqg==}
+    engines: {node: '>=8.x', npm: '>=5.x'}
+    dev: false
 
   /country-code-lookup@0.1.0:
     resolution: {integrity: sha512-IOI66HEG+8bXfWPy+sTzuN7161vmDZOHg1wgIPFf3WfD73FeLajnn6C+fnxOIa9RL1WRBDMXQQWW/FOaOYaQ3w==}
@@ -5593,6 +5607,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /event-cron-parser@1.0.34:
+    resolution: {integrity: sha512-ytqZmMrNfSvzHWriiHdoNOpYKFr4d2fDoC4Rgq0F8lEA37abCWkYhSsqslC/kngWwnTGq7L0Q9VlMreKe6EJbQ==}
+    dependencies:
+      number-to-words: 1.2.4
+    dev: false
+
   /event-stream@3.3.4:
     resolution: {integrity: sha512-QHpkERcGsR0T7Qm3HNJSyXKEEj8AHNxkY3PK8TS2KJvQ7NiSHe3DDpwVKKtoYprL/AreyzFBeIkBIWChAqn60g==}
     dependencies:
@@ -5886,6 +5906,11 @@ packages:
       call-bind: 1.0.5
       get-intrinsic: 1.2.2
     dev: true
+
+  /get-timezone-offset@1.0.5:
+    resolution: {integrity: sha512-+B+/vEJ9qJgZheDVNmuY+4il8sJhTFXRvSiiqyRfwiCEhTaZqn/yCoNToDzQL+Mv9DLKlyO1bSIP5nUCJQN9Aw==}
+    engines: {node: '>=4.0.0'}
+    dev: false
 
   /get-tsconfig@4.7.2:
     resolution: {integrity: sha512-wuMsz4leaj5hbGgg4IvDU0bqJagpftG5l5cXIAvo8uZrqn0NJqwtfupTN00VnkQJPcIRrxYrm1Ue24btpCha2A==}
@@ -7217,6 +7242,10 @@ packages:
     dependencies:
       boolbase: 1.0.0
     dev: true
+
+  /number-to-words@1.2.4:
+    resolution: {integrity: sha512-/fYevVkXRcyBiZDg6yzZbm0RuaD6i0qRfn8yr+6D0KgBMOndFPxuW10qCHpzs50nN8qKuv78k8MuotZhcVX6Pw==}
+    dev: false
 
   /nwsapi@2.2.7:
     resolution: {integrity: sha512-ub5E4+FBPKwAZx0UwIQOjYWGHTEq5sPqHQNRN8Z9e4A7u3Tj1weLJsL59yH9vmvqEtBHaOmT6cYQKIZOxp35FQ==}
